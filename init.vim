@@ -67,7 +67,7 @@ let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
 let g:airline_powerline_fonts = 1
-let g:coc_global_extensions = ['coc-python', 'coc-go',]
+let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css']
 nmap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 nmap <s-left> :bprevious<CR>
 nmap <s-right> :bnext<CR>
