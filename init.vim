@@ -17,6 +17,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'L3MON4D3/LuaSnip'
 Plug 'rafamadriz/friendly-snippets'
+Plug 'ervandew/supertab'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
