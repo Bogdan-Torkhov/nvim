@@ -70,7 +70,6 @@ let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css']
 nmap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 nmap <s-left> :bprevious<CR>
 nmap <s-right> :bnext<CR>
-" use <tab> for trigger completion and navigate to the next complete item
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
