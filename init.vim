@@ -70,3 +70,4 @@ let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css']
 nmap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 nmap <s-left> :bprevious<CR>
 nmap <s-right> :bnext<CR>
+inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
