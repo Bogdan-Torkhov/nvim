@@ -17,7 +17,6 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'L3MON4D3/LuaSnip'
 Plug 'rafamadriz/friendly-snippets'
-Plug 'ervandew/supertab'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
@@ -68,8 +67,6 @@ let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
 let g:airline_powerline_fonts = 1
 let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css']
-nmap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 nmap <s-left> :bprevious<CR>
 nmap <s-right> :bnext<CR>
-inoremap <silent><expr> <c-space> coc#refresh()
-inoremap <silent><expr> <c-@> coc#refresh()
+inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
