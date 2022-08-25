@@ -71,12 +71,5 @@ let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css']
 nmap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 nmap <s-left> :bprevious<CR>
 nmap <s-right> :bnext<CR>
-function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-inoremap <silent><expr> <Tab>
-      \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
+inoremap <silent><expr> <c-space> coc#refresh()
+inoremap <silent><expr> <c-@> coc#refresh()
