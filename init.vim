@@ -25,6 +25,8 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
 Plug 'ap/vim-css-color'
 Plug 'tc50cal/vim-terminal'
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'hashivim/vim-terraform'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
@@ -78,7 +80,7 @@ let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
 let g:airline_powerline_fonts = 1
-let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor']
+let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor', 'coc-yaml']
 nmap <S-Left> :bprevious<CR>
 nmap <S-Right> :bnext<CR> 
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
@@ -87,3 +89,4 @@ inoremap jk <esc>
 inoremap < <><Left>
 set colorcolumn=120
 nmap <C-r> <Plug>(coc-codeaction-selected)
+let g:terraform_fmt_on_save = 'true'
