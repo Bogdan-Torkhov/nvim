@@ -22,6 +22,7 @@ Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
