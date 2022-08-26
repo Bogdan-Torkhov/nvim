@@ -23,6 +23,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
+Plug 'ap/vim-css-color'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
