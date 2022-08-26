@@ -19,6 +19,7 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'rafamadriz/friendly-snippets'
 Plug 'mfussenegger/nvim-lint'
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
