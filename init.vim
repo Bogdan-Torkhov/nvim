@@ -24,6 +24,7 @@ Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
 Plug 'ap/vim-css-color'
+Plug 'tc50cal/vim-terminal'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
