@@ -20,6 +20,8 @@ Plug 'rafamadriz/friendly-snippets'
 Plug 'mfussenegger/nvim-lint'
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
