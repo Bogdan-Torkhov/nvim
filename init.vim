@@ -100,3 +100,4 @@ let g:mkdp_auto_start = 1
 let g:mkdp_refresh_slow = 1
 let g:mkdp_open_to_the_world = 1
 nmap <C-p> <Plug>MarkdownPreview
+wincmd w
