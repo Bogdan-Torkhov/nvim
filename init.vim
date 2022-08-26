@@ -73,3 +73,4 @@ nmap <S-Left> :bprevious<CR>
 nmap <S-Right> :bnext<CR> 
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 autocmd VimEnter * NERDTree
+inoremap jk <esc>
