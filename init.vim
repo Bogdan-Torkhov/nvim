@@ -46,8 +46,8 @@ set expandtab
 set autoindent
 set fileformat=unix
 nmap <C-f> :NERDTree<CR>
-nnoremap <S-Left> <C-w>h
-nnoremap <S-Right> <C-w>l
+nnoremap <C-Left> <C-w>h
+nnoremap <C-Right> <C-w>l
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 set encoding=UTF-8
@@ -69,7 +69,7 @@ let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
 let g:airline_powerline_fonts = 1
 let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css']
-nmap <C-Left> :bprevious<CR>
-nmap <C-Right> :bnext<CR> 
+nmap <S-Left> :bprevious<CR>
+nmap <S-Right> :bnext<CR> 
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 autocmd VimEnter * NERDTree
