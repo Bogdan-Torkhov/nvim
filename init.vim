@@ -78,3 +78,4 @@ inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 autocmd VimEnter * NERDTree
 inoremap jk <esc>
 inoremap < <><Left>
+set colorcolumn=120
