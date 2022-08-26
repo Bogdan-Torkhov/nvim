@@ -38,6 +38,8 @@ set cursorline
 filetype plugin indent on
 syntax on
 syntax enable
+set autoindent
+set smarttab
 set t_Co=256
 set tabstop=4
 set shiftwidth=4
