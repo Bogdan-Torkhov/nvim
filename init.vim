@@ -90,7 +90,7 @@ let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css', 'c
 nmap <S-Left> :bprevious<CR>
 nmap <S-Right> :bnext<CR> 
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
-autocmd VimEnter * NERDTree
+autocmd VimEnter * NERDTree | wincmd p
 inoremap jk <esc>
 inoremap < <><Left>
 set colorcolumn=120
@@ -100,4 +100,3 @@ let g:mkdp_auto_start = 1
 let g:mkdp_refresh_slow = 1
 let g:mkdp_open_to_the_world = 1
 nmap <C-p> <Plug>MarkdownPreview
-wincmd w
