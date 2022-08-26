@@ -96,3 +96,7 @@ inoremap < <><Left>
 set colorcolumn=120
 nmap <C-r> <Plug>(coc-codeaction-selected)
 let g:terraform_fmt_on_save = 1
+let g:mkdp_auto_start = 1
+let g:mkdp_refresh_slow = 1
+let g:mkdp_open_to_the_world = 1
+nmap <C-p> <Plug>MarkdownPreview
