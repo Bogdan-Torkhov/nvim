@@ -2,7 +2,7 @@ call plug#begin()
 Plug 'dracula/vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rust-lang/rust.vim'
@@ -17,6 +17,8 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'L3MON4D3/LuaSnip'
 Plug 'rafamadriz/friendly-snippets'
+Plug 'mfussenegger/nvim-lint'
+Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
