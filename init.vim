@@ -89,4 +89,4 @@ inoremap jk <esc>
 inoremap < <><Left>
 set colorcolumn=120
 nmap <C-r> <Plug>(coc-codeaction-selected)
-let g:terraform_fmt_on_save = 'true'
+let g:terraform_fmt_on_save = 1
