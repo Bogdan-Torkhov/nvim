@@ -27,6 +27,8 @@ Plug 'ap/vim-css-color'
 Plug 'tc50cal/vim-terminal'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'hashivim/vim-terraform'
+Plug 'xolox/vim-colorscheme-switcher'
+Plug 'xolox/vim-misc'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
