@@ -86,3 +86,4 @@ autocmd VimEnter * NERDTree
 inoremap jk <esc>
 inoremap < <><Left>
 set colorcolumn=120
+nmap <C-r> <Plug>(coc-codeaction-selected)
