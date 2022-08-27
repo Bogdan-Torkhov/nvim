@@ -33,6 +33,10 @@ Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
 Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
@@ -63,6 +67,7 @@ set termguicolors
 set expandtab
 set autoindent
 set fileformat=unix
+set encoding=utf-8
 nmap <C-f> :NERDTree<CR>
 nnoremap <C-Left> <C-w>h
 nnoremap <C-Right> <C-w>l
@@ -73,7 +78,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#hunks#enabled = 0
+let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'powerlineish'
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
@@ -86,10 +94,8 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
-let g:bullets_enabled_file_types = [
-    \ 'markdown',
-    \ 'text'
-    \]
+let g:airline_left_sep=' '
+let g:airline_right_sep=' '
 let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor', 'coc-yaml', 'coc-sh']
 nmap <S-Left> :bprevious<CR>
 nmap <S-Right> :bnext<CR> 
@@ -104,3 +110,7 @@ let g:mkdp_auto_start = 1
 let g:mkdp_refresh_slow = 1
 let g:mkdp_open_to_the_world = 1
 nmap <C-p> <Plug>MarkdownPreview
+set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF
