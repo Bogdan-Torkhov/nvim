@@ -35,7 +35,6 @@ Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-signify'
 call plug#end()
 colorscheme dracula
