@@ -35,6 +35,9 @@ Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'tpope/vim-fugitive'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
 
 colorscheme dracula
