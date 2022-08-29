@@ -46,7 +46,6 @@ let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
 let g:NERDTreeStatusline = ''
-autocmd BufEnter NERD_tree_* | execute 'normal R'
 au CursorHold * if exists("t:NerdTreeBufName") | call <SNR>15_refreshRoot() | endif
 set background=dark
 set clipboard=unnamedplus
@@ -74,17 +73,16 @@ set encoding=utf-8
 nmap <C-f> :NERDTree<CR>
 nnoremap <C-Left> <C-w>h
 nnoremap <C-Right> <C-w>l
+nnoremap <C-space> :nohlsearch<CR>
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 set encoding=UTF-8
 let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor', 'coc-yaml', 'coc-sh', 'coc-sql']
 nmap <S-Left> :bprevious<CR>
 nmap <S-Right> :bnext<CR> 
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
-autocmd VimEnter * NERDTree | wincmd p
 inoremap jk <esc>
 inoremap < <><Left>
-set colorcolumn=120
+set colorcolumn=130
 nmap <C-r> <Plug>(coc-codeaction-selected)
 let g:terraform_fmt_on_save = 1
 let g:mkdp_auto_start = 1
@@ -92,22 +90,44 @@ let g:mkdp_refresh_slow = 1
 let g:mkdp_open_to_the_world = 1
 nmap <C-p> <Plug>MarkdownPreview
 set termguicolors
-lua << END
-require('lualine').setup{
-    options = { 
-        section_separators = '', 
-        component_separators = '',
-},
-    sections = {
-        lualine_a = {'mode'},
-        lualine_b = {'branch', 'diff', 'diagnostics'},
-        lualine_c = {'filename'},
-        lualine_x = {'fileformat', 'encoding' 'filetype'},
-        lualine_y = {'progress'},
-        lualine_z = {'location'}
-},
+lua << EOF
+require('lualine').setup {
+  options = {
+    icons_enabled = true,
+    theme = 'dracula',
+    component_separators = '|',
+    section_separators = {left = '|', right = '|'},
+    ignore_focus = {},
+    always_divide_middle = true,
+    globalstatus = false,
+    refresh = {
+      statusline = 1000,
+      tabline = 1000,
+      winbar = 1000,
+    }
+  },
+  sections = {
+      lualine_a = {'mode'},
+    lualine_b = {{'branch', icon = ''}, 'diff', 'diagnostics'},
+    lualine_c = {'filename'},
+    lualine_x = {'fileformat', 'encoding', 'filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'}
+  },
+  inactive_sections = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {'filename'},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {}
+  },
+  tabline = {},
+  winbar = {},
+  inactive_winbar = {},
+  extensions = {'fzf', 'man', 'nerdtree', 'quickfix'}
 }
-END
+EOF
 let bufferline = get(g:, 'bufferline', {})
 let bufferline.animation = v:true
 let bufferline.closable = v:false
