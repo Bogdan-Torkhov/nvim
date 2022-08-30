@@ -36,7 +36,10 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
+Plug 'romgrk/barbar.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 call plug#end()
 
@@ -139,13 +142,7 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {'fzf', 'man', 'nerdtree', 'quickfix'}
 }
-require("bufferline").setup{}
 EOF
 let bufferline = get(g:, 'bufferline', {})
 let bufferline.animation = v:true
 let bufferline.closable = v:false
-let bufferline.icon_separator_active = '▎'
-let bufferline.icon_separator_inactive = '▎'
-let bufferline.icon_close_tab = ''
-let bufferline.icon_close_tab_modified = '●'
-let bufferline.icon_pinned = '車'
