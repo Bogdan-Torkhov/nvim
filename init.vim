@@ -196,3 +196,5 @@ nnoremap <silent>    <A-8> <cmd>BufferGoto 8<cr>
 nnoremap <silent>    <A-9> <cmd>BufferGoto 9<cr>
 nnoremap <silent>    <A-0> <cmd>BufferLast<cr>
 nnoremap <silent>    <A-q> <cmd>BufferClose<cr>
+let g:NERDTreeMapJumpNextSibling="☻"
+let g:NERDTreeMapJumpPrevSibling="☺"
