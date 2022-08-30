@@ -70,6 +70,10 @@ set expandtab
 set autoindent
 set fileformat=unix
 set encoding=utf-8
+set relativenumber
+set nowrap
+set scrolloff=10
+:nmap <c-s> :w<CR>
 nmap <C-f> :NERDTree<CR>
 nnoremap <C-Left> <C-w>h
 nnoremap <C-Right> <C-w>l
