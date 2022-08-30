@@ -144,6 +144,9 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {'fzf', 'man', 'nerdtree', 'quickfix'}
 }
+require('telescope').setup{
+
+}
 EOF
 let bufferline = get(g:, 'bufferline', {})
 let bufferline.animation = v:true
