@@ -73,26 +73,31 @@ set encoding=utf-8
 set relativenumber
 set nowrap
 set scrolloff=10
-:nmap <c-s> :w<CR>
+nmap <c-q> :bd<CR>
+nmap <c-s> :w<CR>
 nmap <C-f> :NERDTree<CR>
-nnoremap <C-Left> <C-w>h
-nnoremap <C-Right> <C-w>l
-nnoremap <C-space> :nohlsearch<CR>
+nnoremap <c-j> <c-w>h
+nnoremap <c-k> <c-w>l 
+nnoremap <c-Left> <c-w>h
+nnoremap <c-Right> <c-w>l
+nnoremap <c-space> :nohlsearch<CR>
 autocmd StdinReadPre * let s:std_in=1
 set encoding=UTF-8
 let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor', 'coc-yaml', 'coc-sh', 'coc-sql']
-nmap <S-Left> :bprevious<CR>
-nmap <S-Right> :bnext<CR> 
+nmap <s-j> :bprevious<CR>
+nmap <s-k> :bnext<CR>
+nmap <s-Left> :bprevious<CR>
+nmap <s-Right> :bnext<CR> 
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap jk <esc>
 inoremap < <><Left>
 set colorcolumn=130
-nmap <C-r> <Plug>(coc-codeaction-selected)
+nmap <c-r> <Plug>(coc-codeaction-selected)
 let g:terraform_fmt_on_save = 1
 let g:mkdp_auto_start = 1
 let g:mkdp_refresh_slow = 1
 let g:mkdp_open_to_the_world = 1
-nmap <C-p> <Plug>MarkdownPreview
+nmap <c-p> <Plug>MarkdownPreview
 set termguicolors
 lua << EOF
 require('lualine').setup {
