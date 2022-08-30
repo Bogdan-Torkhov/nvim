@@ -90,7 +90,9 @@ nmap <c-q> :bd<cr>
 nmap <c-s> :w<cr>
 nmap <c-f> :NERDTree<cr>
 nnoremap <s-f> <cmd>Telescope find_files<cr>
-nnoremap <s-g> <cmd>Telescope live_grep<cr>
+nnoremap <s-l> <cmd>Telescope live_grep<cr>
+nnoremap <s-g> <cmd>Telescope repo list<cr>
+nnoremap <s-b> <cmd>Telescope file_browser<cr>
 nnoremap <c-j> <c-w>h
 nnoremap <c-k> <c-w>l 
 nnoremap <c-left> <c-w>h
@@ -156,15 +158,24 @@ require('lualine').setup {
 }
 require('telescope').setup{
     extensions = {
+        repo = {
+            subcommand = {
+                argument = {
+                    "new",
+                    "default",
+                    "value",
+        },
+      },
+    },
         fzf = {
             fuzzy = true,                    
             override_generic_sorter = true,  
             override_file_sorter = true,     
             case_mode = "smart_case",        
-        }
-    }
+        },
+    },
 }
-require('telescope').load_extension('fzf')
+require('telescope').load_extension('fzf', 'repo')
 EOF
 let bufferline = get(g:, 'bufferline', {})
 let bufferline.animation = v:true
