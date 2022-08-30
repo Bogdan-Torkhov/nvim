@@ -75,6 +75,7 @@ set nowrap
 set scrolloff=10
 set nobackup
 set nowb
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 nmap <c-q> :bd<CR>
 nmap <c-s> :w<CR>
 nmap <C-f> :NERDTree<CR>
