@@ -146,3 +146,8 @@ EOF
 let bufferline = get(g:, 'bufferline', {})
 let bufferline.animation = v:true
 let bufferline.closable = v:false
+let bufferline.icon_separator_active = '▎'
+let bufferline.icon_separator_inactive = '▎'
+let bufferline.icon_close_tab = ''
+let bufferline.icon_close_tab_modified = '●'
+let bufferline.icon_pinned = '車'
