@@ -45,6 +45,9 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'sheerun/vim-polyglot'
 Plug 'pearofducks/ansible-vim'
 Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}
+Plug 'cljoly/telescope-repo.nvim'
+Plug 'nvim-telescope/telescope-file-browser.nvim'
+Plug '/nvim-telescope/telescope-project.nvim'
 call plug#end()
 
 colorscheme dracula
