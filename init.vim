@@ -79,21 +79,23 @@ set nobackup
 set nowb
 set termguicolors
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-nmap <c-q> :bd<CR>
-nmap <c-s> :w<CR>
-nmap <C-f> :NERDTree<CR>
+nmap <c-q> :bd<cr>
+nmap <c-s> :w<cr>
+nmap <c-f> :NERDTree<cr>
+nnoremap <s-f> <cmd>Telescope find_files<cr>
+nnoremap <s-g> <cmd>Telescope live_grep<cr>
 nnoremap <c-j> <c-w>h
 nnoremap <c-k> <c-w>l 
 nnoremap <c-left> <c-w>h
 nnoremap <c-right> <c-w>l
-nnoremap <c-space> :nohlsearch<CR>
+nnoremap <c-space> :nohlsearch<cr>
 autocmd StdinReadPre * let s:std_in=1
 set encoding=UTF-8
 let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor', 'coc-yaml', 'coc-sh', 'coc-sql']
-nmap <s-j> :bprevious<CR>
-nmap <s-k> :bnext<CR>
-nmap <s-Left> :bprevious<CR>
-nmap <s-Right> :bnext<CR> 
+nmap <s-j> :bprevious<cr>
+nmap <s-k> :bnext<cr>
+nmap <s-Left> :bprevious<cr>
+nmap <s-Right> :bnext<cr> 
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap jk <esc>
 inoremap < <><Left>
@@ -153,14 +155,14 @@ let bufferline.icon_close_tab_modified = '●'
 let bufferline.icon_pinned = '車'
 let bufferline.maximum_padding = 0
 let bufferline.maximum_length = 100
-nnoremap <silent>    <A-1> <Cmd>BufferGoto 1<CR>
-nnoremap <silent>    <A-2> <Cmd>BufferGoto 2<CR>
-nnoremap <silent>    <A-3> <Cmd>BufferGoto 3<CR>
-nnoremap <silent>    <A-4> <Cmd>BufferGoto 4<CR>
-nnoremap <silent>    <A-5> <Cmd>BufferGoto 5<CR>
-nnoremap <silent>    <A-6> <Cmd>BufferGoto 6<CR>
-nnoremap <silent>    <A-7> <Cmd>BufferGoto 7<CR>
-nnoremap <silent>    <A-8> <Cmd>BufferGoto 8<CR>
-nnoremap <silent>    <A-9> <Cmd>BufferGoto 9<CR>
-nnoremap <silent>    <A-0> <Cmd>BufferLast<CR>
-nnoremap <silent>    <A-q> <Cmd>BufferClose<CR>
+nnoremap <silent>    <A-1> <cmd>BufferGoto 1<cr>
+nnoremap <silent>    <A-2> <cmd>BufferGoto 2<cr>
+nnoremap <silent>    <A-3> <cmd>BufferGoto 3<cr>
+nnoremap <silent>    <A-4> <cmd>BufferGoto 4<cr>
+nnoremap <silent>    <A-5> <cmd>BufferGoto 5<cr>
+nnoremap <silent>    <A-6> <cmd>BufferGoto 6<cr>
+nnoremap <silent>    <A-7> <cmd>BufferGoto 7<cr>
+nnoremap <silent>    <A-8> <cmd>BufferGoto 8<cr>
+nnoremap <silent>    <A-9> <cmd>BufferGoto 9<cr>
+nnoremap <silent>    <A-0> <cmd>BufferLast<cr>
+nnoremap <silent>    <A-q> <cmd>BufferClose<cr>
