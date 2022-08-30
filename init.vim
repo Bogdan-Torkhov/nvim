@@ -73,6 +73,8 @@ set encoding=utf-8
 set relativenumber
 set nowrap
 set scrolloff=10
+set nobackup
+set nowb
 nmap <c-q> :bd<CR>
 nmap <c-s> :w<CR>
 nmap <C-f> :NERDTree<CR>
