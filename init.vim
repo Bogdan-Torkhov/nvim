@@ -118,21 +118,21 @@ require('lualine').setup {
       winbar = 1000,
     }
   },
-  sections = {
-    lualine_a = {{'mode', separator = {left = '|'}}},
-    lualine_b = {{'branch', icon = '', separator = {right = '|'}, 'diff', 'diagnostics'}},
-    lualine_c = {{'filename', separator = {right = '|'}}},
-    lualine_x = {'fileformat', 'encoding', 'filetype'},
-    lualine_y = {{'progress', separator = {right = '|'}}},
-    lualine_z = {{'location', separator = {right = '|'}}}
+    sections = {
+        lualine_a = {{'mode', separator = {left = ''}}},
+        lualine_b = {{'branch', icon = '', separator = {left = ''}, 'diff', 'diagnostics'}},
+        lualine_c = {{'filename'}},
+        lualine_x = {'fileformat', 'encoding', 'filetype'},
+        lualine_y = {{'progress', separator = {right = ''}}},
+        lualine_z = {{'location', separator = {right = ''}}}
   },
-  inactive_sections = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = {'filename'},
-    lualine_x = {},
-    lualine_y = {},
-    lualine_z = {}
+    inactive_sections = {
+        lualine_a = {},
+        lualine_b = {},
+        lualine_c = {'filename'},
+        lualine_x = {},
+        lualine_y = {},
+        lualine_z = {}
   },
   tabline = {},
   winbar = {},
