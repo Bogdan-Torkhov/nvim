@@ -42,6 +42,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-signify'
 Plug 'romgrk/barbar.nvim'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'sheerun/vim-polyglot'
+Plug 'pearofducks/ansible-vim'
 call plug#end()
 
 colorscheme dracula
@@ -93,6 +95,9 @@ nnoremap <c-space> :nohlsearch<cr>
 autocmd StdinReadPre * let s:std_in=1
 set encoding=UTF-8
 let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor', 'coc-yaml', 'coc-sh', 'coc-sql', '@yaegassy/coc-ansible']
+let g:coc_filetype_map = {
+  \ 'yaml.ansible': 'ansible',
+  \ }
 nmap <s-j> :bprevious<cr>
 nmap <s-k> :bnext<cr>
 nmap <s-Left> :bprevious<cr>
