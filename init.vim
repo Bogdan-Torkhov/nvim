@@ -139,7 +139,7 @@ require('lualine').setup {
         lualine_a = {{'mode', separator = {left = ''}}},
         lualine_b = {{'branch', icon = '', separator = {left = ''}, 'diff', 'diagnostics'}},
         lualine_c = {{'filename'}},
-        lualine_x = {'fileformat', 'encoding', 'filetype'},
+        lualine_x = {{'encoding', icon = ''}, 'filetype'},
         lualine_y = {{'progress', separator = {right = ''}}},
         lualine_z = {{'location', separator = {right = ''}}}
   },
