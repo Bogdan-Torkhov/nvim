@@ -44,6 +44,7 @@ Plug 'romgrk/barbar.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'sheerun/vim-polyglot'
 Plug 'pearofducks/ansible-vim'
+Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}
 call plug#end()
 
 colorscheme dracula
