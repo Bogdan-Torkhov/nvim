@@ -31,14 +31,13 @@ Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
 Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'tpope/vim-fugitive'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'romgrk/barbar.nvim'
 call plug#end()
 
 colorscheme dracula
@@ -75,6 +74,7 @@ set nowrap
 set scrolloff=10
 set nobackup
 set nowb
+set termguicolors
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 nmap <c-q> :bd<CR>
 nmap <c-s> :w<CR>
@@ -139,6 +139,7 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {'fzf', 'man', 'nerdtree', 'quickfix'}
 }
+require("bufferline").setup{}
 EOF
 let bufferline = get(g:, 'bufferline', {})
 let bufferline.animation = v:true
