@@ -49,7 +49,6 @@ Plug 'cljoly/telescope-repo.nvim'
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug '/nvim-telescope/telescope-project.nvim'
 call plug#end()
-
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
