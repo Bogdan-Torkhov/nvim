@@ -151,8 +151,8 @@ let bufferline.icon_separator_inactive = '▎'
 let bufferline.icon_close_tab = ''
 let bufferline.icon_close_tab_modified = '●'
 let bufferline.icon_pinned = '車'
-let bufferline.maximum_padding = 5
-let bufferline.maximum_length = 50
+let bufferline.maximum_padding = 0
+let bufferline.maximum_length = 100
 nnoremap <silent>    <A-1> <Cmd>BufferGoto 1<CR>
 nnoremap <silent>    <A-2> <Cmd>BufferGoto 2<CR>
 nnoremap <silent>    <A-3> <Cmd>BufferGoto 3<CR>
