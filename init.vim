@@ -78,8 +78,8 @@ nmap <c-s> :w<CR>
 nmap <C-f> :NERDTree<CR>
 nnoremap <c-j> <c-w>h
 nnoremap <c-k> <c-w>l 
-nnoremap <c-Left> <c-w>h
-nnoremap <c-Right> <c-w>l
+nnoremap <c-left> <c-w>h
+nnoremap <c-right> <c-w>l
 nnoremap <c-space> :nohlsearch<CR>
 autocmd StdinReadPre * let s:std_in=1
 set encoding=UTF-8
