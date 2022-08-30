@@ -94,7 +94,7 @@ nmap <s-Right> :bnext<CR>
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap jk <esc>
 inoremap < <><Left>
-set colorcolumn=130
+set colorcolumn=150
 nmap <c-r> <Plug>(coc-codeaction-selected)
 let g:terraform_fmt_on_save = 1
 let g:mkdp_auto_start = 1
