@@ -48,6 +48,10 @@ Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}
 Plug 'cljoly/telescope-repo.nvim'
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug '/nvim-telescope/telescope-project.nvim'
+Plug 'lambdalisue/nerdfont.vim'
+Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+Plug 'lambdalisue/glyph-palette.vim'
+Plug 'lambdalisue/fern.vim'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
@@ -196,3 +200,4 @@ nnoremap <silent>    <A-0> <cmd>BufferLast<cr>
 nnoremap <silent>    <A-q> <cmd>BufferClose<cr>
 let g:NERDTreeMapJumpNextSibling="j"
 let g:NERDTreeMapJumpPrevSibling="k"
+let g:fern#renderer = "nerdfont"
