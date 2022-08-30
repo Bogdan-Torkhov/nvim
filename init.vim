@@ -35,6 +35,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -145,8 +146,16 @@ require('lualine').setup {
   extensions = {'fzf', 'man', 'nerdtree', 'quickfix'}
 }
 require('telescope').setup{
-
+    extensions = {
+        fzf = {
+            fuzzy = true,                    
+            override_generic_sorter = true,  
+            override_file_sorter = true,     
+            case_mode = "smart_case",        
+        }
+    }
 }
+require('telescope').load_extension('fzf')
 EOF
 let bufferline = get(g:, 'bufferline', {})
 let bufferline.animation = v:true
