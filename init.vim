@@ -88,8 +88,8 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 nmap <c-q> :bd<cr>
 nmap <c-s> :w<cr>
 nmap <c-f> :NERDTree<cr>
-nnoremap <s-f> <cmd>Telescope find_files<cr>
-nnoremap <s-g> <cmd>Telescope live_grep<cr>
+nnoremap <s-f> <cmd>Telescope find_files cwd=/home/deusbog<cr>
+nnoremap <s-g> <cmd>Telescope live_grep cwd=/home/deusbog<cr>
 nnoremap <s-r> <cmd>Telescope repo list<cr>
 nnoremap <c-j> <c-w>h
 nnoremap <c-k> <c-w>l 
