@@ -1,8 +1,5 @@
 {
-  "suggest.noselect": true,
-  "languageserver": {
-      "pyright": {
-      "python.formatting.provider": "autopep8"
-    },
- },
+    "suggest.noselect": true,
+    "python.formatting.provider":"autopep8",
+    "coc.preferences.formatOnSaveFiletypes": ["python", "go"],
 }
