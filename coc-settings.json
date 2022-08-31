@@ -1,8 +1,9 @@
 {
-  "suggest.noselect": true,
-  "languageserver": {
-      "pyright": {
-      "python.formatting.provider": "autopep8"
-    },
- },
-},
+    "suggest.noselect": true,
+    "coc.preferences.formatOnSaveFiletypes":["python"],
+    "languageserver": {
+        "pyright": {
+        "python.formatting.provider": "autopep8"
+    }
+ }
+}
