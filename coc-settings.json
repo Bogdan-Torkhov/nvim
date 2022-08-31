@@ -1,3 +1,10 @@
 { 
-    "suggest.noselect":true
+    "suggest.noselect":true,
+    {
+  "languageserver": {
+    "pyright": {
+     "python.formatting.provider":"autopep8"
+}
+}
+}
 }
