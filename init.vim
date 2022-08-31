@@ -52,6 +52,7 @@ Plug 'lambdalisue/nerdfont.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/glyph-palette.vim'
 Plug 'lambdalisue/fern.vim'
+Plug 'Vimjas/vim-python-pep8-indent'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
