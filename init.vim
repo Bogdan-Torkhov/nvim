@@ -105,6 +105,19 @@ let g:coc_global_extensions = ['coc-python', 'coc-go', 'coc-html', 'coc-css', 'c
 let g:coc_filetype_map = {
   \ 'yaml.ansible': 'ansible',
   \ }
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gt <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+nnoremap <silent> D :call ShowDocumentation()<CR>
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('D', 'in')
+  endif
+endfunction
+nmap <leader>cl  <Plug>(coc-codelens-action)
 nmap <s-j> :bprevious<cr>
 nmap <s-k> :bnext<cr>
 nmap <s-Left> :bprevious<cr>
