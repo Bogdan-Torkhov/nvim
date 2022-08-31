@@ -122,7 +122,8 @@ nmap <s-j> :bprevious<cr>
 nmap <s-k> :bnext<cr>
 nmap <s-Left> :bprevious<cr>
 nmap <s-Right> :bnext<cr> 
-inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
+inoremap <expr> <tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
+inoremap <expr> <s-tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 inoremap jk <esc>
 inoremap < <><Left>
 set colorcolumn=150
