@@ -101,7 +101,7 @@ nnoremap <c-right> <c-w>l
 nnoremap <c-space> :nohlsearch<cr>
 autocmd StdinReadPre * let s:std_in=1
 set encoding=UTF-8
-let g:coc_global_extensions = ['coc-pyright', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor', 'coc-yaml', 'coc-sh', 'coc-sql', '@yaegassy/coc-ansible', 'coc-rust-analyzer']
+let g:coc_global_extensions = ['coc-pyright', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor', 'coc-yaml', 'coc-sh', 'coc-sql', '@yaegassy/coc-ansible', 'coc-rust-analyzer', 'coc-xml']
 let g:coc_filetype_map = {
   \ 'yaml.ansible': 'ansible',
   \ }
