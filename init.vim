@@ -215,4 +215,5 @@ nnoremap <silent>    <A-0> <cmd>BufferLast<cr>
 nnoremap <silent>    <A-q> <cmd>BufferClose<cr>
 let g:NERDTreeMapJumpNextSibling="j"
 let g:NERDTreeMapJumpPrevSibling="k"
+
 let g:fern#renderer = "nerdfont"
