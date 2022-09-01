@@ -1,5 +1,6 @@
 {
     "suggest.noselect": true,
+    "python.linting.pylintEnabled": true,
     "python.formatting.provider": "autopep8",
     "coc.preferences.formatOnSaveFiletypes": ["python", "go"]
 }
