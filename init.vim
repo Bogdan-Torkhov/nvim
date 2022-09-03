@@ -57,6 +57,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'craigemery/vim-autotag'
 Plug 'mattn/emmet-vim'
 Plug 'glepnir/dashboard-nvim'
+Plug 'tpope/vim-commentary'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
