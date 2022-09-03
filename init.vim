@@ -58,6 +58,7 @@ Plug 'craigemery/vim-autotag'
 Plug 'mattn/emmet-vim'
 Plug 'glepnir/dashboard-nvim'
 Plug 'tpope/vim-commentary'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
