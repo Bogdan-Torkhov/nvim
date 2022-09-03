@@ -62,7 +62,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
-let g:NERDTreeMinimalUI = 1
+let g:NERDTreeChDirMode=0
 let g:NERDTreeIgnore = []
 let g:NERDTreeStatusline = ''
 au CursorHold * if exists("t:NerdTreeBufName") | call <SNR>15_refreshRoot() | endif
