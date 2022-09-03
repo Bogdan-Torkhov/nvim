@@ -55,6 +55,7 @@ Plug 'lambdalisue/fern.vim'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'jiangmiao/auto-pairs'
 Plug 'craigemery/vim-autotag'
+Plug 'mattn/emmet-vim'
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
