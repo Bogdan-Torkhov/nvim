@@ -219,6 +219,8 @@ nnoremap <silent>    <A-8> <cmd>BufferGoto 8<cr>
 nnoremap <silent>    <A-9> <cmd>BufferGoto 9<cr>
 nnoremap <silent>    <A-0> <cmd>BufferLast<cr>
 nnoremap <silent>    <A-q> <cmd>BufferClose<cr>
-let g:NERDTreeMapJumpNextSibling="j"
-let g:NERDTreeMapJumpPrevSibling="k"
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 let g:fern#renderer = "nerdfont"
