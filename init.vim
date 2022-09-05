@@ -103,6 +103,8 @@ nnoremap <s-f> <cmd>Telescope find_files hidden=true cwd=/home/deusbog<cr>
 nnoremap <s-g> <cmd>Telescope live_grep hidden=true cwd=/home/deusbog<cr>
 nnoremap <s-r> <cmd>Telescope repo list<cr>
 nnoremap <c-left> <c-w>h
+nnoremap <c-down> <c-w>j
+nnoremap <c-up> <c-w>k
 nnoremap <c-right> <c-w>l
 nnoremap <c-space> :nohlsearch<cr>
 autocmd StdinReadPre * let s:std_in=1
@@ -124,8 +126,8 @@ function! ShowDocumentation()
   endif
 endfunction
 nmap <leader>cl  <Plug>(coc-codelens-action)
-nmap <s-j> :bprevious<cr>
-nmap <s-k> :bnext<cr>
+nmap <s-h> :bprevious<cr>
+nmap <s-l> :bnext<cr>
 nmap <s-Left> :bprevious<cr>
 nmap <s-Right> :bnext<cr> 
 inoremap <expr> <tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
