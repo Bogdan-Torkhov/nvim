@@ -99,7 +99,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 nmap <c-q> :bd<cr>
 nmap <c-s> :w<cr>
 nmap <c-f> :NERDTree<cr>
-nmap <s-space> <c>
+nmap <s-space> <s-C>
 nnoremap <s-f> <cmd>Telescope find_files hidden=true<cr>
 nnoremap <s-g> <cmd>Telescope live_grep hidden=true<cr>
 nnoremap <s-r> <cmd>Telescope repo list<cr>
