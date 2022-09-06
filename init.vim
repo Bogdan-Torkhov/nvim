@@ -99,8 +99,9 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 nmap <c-q> :bd<cr>
 nmap <c-s> :w<cr>
 nmap <c-f> :NERDTree<cr>
-nnoremap <s-f> <cmd>Telescope find_files hidden=true cwd=/home/deusbog<cr>
-nnoremap <s-g> <cmd>Telescope live_grep hidden=true cwd=/home/deusbog<cr>
+nmap <s-space> <c>
+nnoremap <s-f> <cmd>Telescope find_files hidden=true<cr>
+nnoremap <s-g> <cmd>Telescope live_grep hidden=true<cr>
 nnoremap <s-r> <cmd>Telescope repo list<cr>
 nnoremap <c-left> <c-w>h
 nnoremap <c-down> <c-w>j
@@ -221,8 +222,8 @@ nnoremap <silent>    <A-8> <cmd>BufferGoto 8<cr>
 nnoremap <silent>    <A-9> <cmd>BufferGoto 9<cr>
 nnoremap <silent>    <A-0> <cmd>BufferLast<cr>
 nnoremap <silent>    <A-q> <cmd>BufferClose<cr>
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <c-j> <c-w><c-j>
+nnoremap <c-k> <c-w><c-k>
+nnoremap <c-l> <c-w><c-l>
+nnoremap <c-h> <c-w><c-h>
 let g:fern#renderer = "nerdfont"
