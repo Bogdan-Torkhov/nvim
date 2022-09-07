@@ -58,6 +58,7 @@ Plug 'mattn/emmet-vim'
 Plug 'glepnir/dashboard-nvim'
 Plug 'tpope/vim-commentary'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}
 call plug#end()
 colorscheme dracula
 let g:NERDTreeShowHidden = 1
@@ -109,7 +110,7 @@ nnoremap <s-right> <c-w>l
 nnoremap <s-space> :nohlsearch<cr>
 autocmd StdinReadPre * let s:std_in=1
 set encoding=UTF-8
-let g:coc_global_extensions = ['coc-pyright', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor', 'coc-yaml', 'coc-sh', 'coc-sql', '@yaegassy/coc-ansible', 'coc-rust-analyzer', 'coc-xml', 'coc-git', 'coc-prettier', 'coc-java', 'coc-snippets', 'coc-ccls']
+let g:coc_global_extensions = ['coc-pyright', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor', 'coc-yaml', 'coc-sh', 'coc-sql', '@yaegassy/coc-ansible', 'coc-rust-analyzer', 'coc-xml', 'coc-git', 'coc-prettier', 'coc-java', 'coc-snippets']
 let g:coc_filetype_map = {
   \ 'yaml.ansible': 'ansible',
   \ }
