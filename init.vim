@@ -96,18 +96,18 @@ set nobackup
 set nowb
 set termguicolors
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-nmap <c-q> :bd<cr>
-nmap <c-s> :w<cr>
-nmap <c-f> :NERDTree<cr>
-nmap <s-t> <s-C>
-nnoremap <s-f> <cmd>Telescope find_files hidden=true cwd=/home/deusbog<cr>
-nnoremap <s-g> <cmd>Telescope live_grep hidden=true cwd=/home/deusbog<cr>
-nnoremap <s-r> <cmd>Telescope repo list<cr>
-nnoremap <c-left> <c-w>h
-nnoremap <c-down> <c-w>j
-nnoremap <c-up> <c-w>k
-nnoremap <c-right> <c-w>l
-nnoremap <c-space> :nohlsearch<cr>
+nmap <s-q> :bd<cr>
+nmap <s-s> :w<cr>
+nmap <s-f> :NERDTree<cr>
+nmap <space> <s-C>
+nnoremap <c-f> <cmd>Telescope find_files hidden=true cwd=/home/deusbog<cr>
+nnoremap <c-g> <cmd>Telescope live_grep hidden=true cwd=/home/deusbog<cr>
+nnoremap <c-r> <cmd>Telescope repo list<cr>
+nnoremap <s-left> <c-w>h
+nnoremap <s-down> <c-w>j
+nnoremap <s-up> <c-w>k
+nnoremap <s-right> <c-w>l
+nnoremap <s-space> :nohlsearch<cr>
 autocmd StdinReadPre * let s:std_in=1
 set encoding=UTF-8
 let g:coc_global_extensions = ['coc-pyright', 'coc-go', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-eslint', 'coc-tslint-plugin', 'coc-styled-components', 'coc-react-refactor', 'coc-yaml', 'coc-sh', 'coc-sql', '@yaegassy/coc-ansible', 'coc-rust-analyzer', 'coc-xml', 'coc-git', 'coc-prettier', 'coc-java', 'coc-snippets', 'coc-ccls']
@@ -222,8 +222,8 @@ nnoremap <silent>    <A-8> <cmd>BufferGoto 8<cr>
 nnoremap <silent>    <A-9> <cmd>BufferGoto 9<cr>
 nnoremap <silent>    <A-0> <cmd>BufferLast<cr>
 nnoremap <silent>    <A-q> <cmd>BufferClose<cr>
-nnoremap <c-j> <c-w><c-j>
-nnoremap <c-k> <c-w><c-k>
-nnoremap <c-l> <c-w><c-l>
-nnoremap <c-h> <c-w><c-h>
+nnoremap <s-j> <c-w><c-j>
+nnoremap <s-k> <c-w><c-k>
+nnoremap <s-l> <c-w><c-l>
+nnoremap <s-h> <c-w><c-h>
 let g:fern#renderer = "nerdfont"
