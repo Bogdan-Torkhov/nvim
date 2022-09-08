@@ -132,9 +132,6 @@ nmap <s-h> :bprevious<cr>
 nmap <s-l> :bnext<cr>
 nmap <s-Left> :bprevious<cr>
 nmap <s-Right> :bnext<cr> 
-let g:bracey_auto_start_browser = 1
-let g:bracey_refresh_on_save = 1
-let g:bracey_eval_on_save = 1
 inoremap <expr> <tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap <expr> <s-tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 inoremap jk <esc>
