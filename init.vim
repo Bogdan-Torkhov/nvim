@@ -166,7 +166,7 @@ require('lualine').setup {
     sections = {
         lualine_a = {{'mode', icon= '', separator = {left = ''}}},
         lualine_b = {{'branch', icon = '', separator = {left = ''}}, {'diff', separator = {right = ''}}, {'diagnostics', separator = {right= ''}}},
-        lualine_c = {{'filename'}},
+        lualine_c = {{'filename'}}, 
         lualine_x = {{'encoding', icon = ''}, 'filetype'},
         lualine_y = {{'progress', separator = {right = ''}}},
         lualine_z = {{'location', icon='', separator = {right = ''}}}
