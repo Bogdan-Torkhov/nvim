@@ -31,6 +31,7 @@ Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
 Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'turbio/bracey.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -131,6 +132,9 @@ nmap <s-h> :bprevious<cr>
 nmap <s-l> :bnext<cr>
 nmap <s-Left> :bprevious<cr>
 nmap <s-Right> :bnext<cr> 
+let g:bracey_auto_start_browser = 1
+let g:bracey_refresh_on_save = 1
+let g:bracey_eval_on_save = 1
 inoremap <expr> <tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap <expr> <s-tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 inoremap jk <esc>
@@ -160,12 +164,12 @@ require('lualine').setup {
     }
   },
     sections = {
-        lualine_a = {{'mode', separator = {left = ''}}},
+        lualine_a = {{'mode', icon= '', separator = {left = ''}}},
         lualine_b = {{'branch', icon = '', separator = {left = ''}}, {'diff', separator = {right = ''}}, {'diagnostics', separator = {right= ''}}},
         lualine_c = {{'filename'}},
         lualine_x = {{'encoding', icon = ''}, 'filetype'},
         lualine_y = {{'progress', separator = {right = ''}}},
-        lualine_z = {{'location', separator = {right = ''}}}
+        lualine_z = {{'location', icon='', separator = {right = ''}}}
   },
     inactive_sections = {
         lualine_a = {},
