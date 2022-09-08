@@ -128,10 +128,10 @@ function! ShowDocumentation()
   endif
 endfunction
 nmap <leader>cl  <Plug>(coc-codelens-action)
-nmap <s-h> :bprevious<cr>
-nmap <s-l> :bnext<cr>
-nmap <s-Left> :bprevious<cr>
-nmap <s-Right> :bnext<cr> 
+nmap <c-h> :bprevious<cr>
+nmap <c-l> :bnext<cr>
+nmap <c-Left> :bprevious<cr>
+nmap <c-Right> :bnext<cr> 
 inoremap <expr> <tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap <expr> <s-tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 inoremap jk <esc>
@@ -212,17 +212,16 @@ let bufferline.icon_close_tab_modified = '●'
 let bufferline.icon_pinned = '車'
 let bufferline.maximum_padding = 0
 let bufferline.maximum_length = 100
-nnoremap <silent>    <A-1> <cmd>BufferGoto 1<cr>
-nnoremap <silent>    <A-2> <cmd>BufferGoto 2<cr>
-nnoremap <silent>    <A-3> <cmd>BufferGoto 3<cr>
-nnoremap <silent>    <A-4> <cmd>BufferGoto 4<cr>
-nnoremap <silent>    <A-5> <cmd>BufferGoto 5<cr>
-nnoremap <silent>    <A-6> <cmd>BufferGoto 6<cr>
-nnoremap <silent>    <A-7> <cmd>BufferGoto 7<cr>
-nnoremap <silent>    <A-8> <cmd>BufferGoto 8<cr>
-nnoremap <silent>    <A-9> <cmd>BufferGoto 9<cr>
-nnoremap <silent>    <A-0> <cmd>BufferLast<cr>
-nnoremap <silent>    <A-q> <cmd>BufferClose<cr>
+nnoremap <silent>    <s-1> <cmd>BufferGoto 1<cr>
+nnoremap <silent>    <s-2> <cmd>BufferGoto 2<cr>
+nnoremap <silent>    <s-3> <cmd>BufferGoto 3<cr>
+nnoremap <silent>    <s-4> <cmd>BufferGoto 4<cr>
+nnoremap <silent>    <s-5> <cmd>BufferGoto 5<cr>
+nnoremap <silent>    <s-6> <cmd>BufferGoto 6<cr>
+nnoremap <silent>    <s-7> <cmd>BufferGoto 7<cr>
+nnoremap <silent>    <s-8> <cmd>BufferGoto 8<cr>
+nnoremap <silent>    <s-9> <cmd>BufferGoto 9<cr>
+nnoremap <silent>    <s-0> <cmd>BufferLast<cr>
 nnoremap <s-j> <c-w><c-j>
 nnoremap <s-k> <c-w><c-k>
 nnoremap <s-l> <c-w><c-l>
