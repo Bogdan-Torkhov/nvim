@@ -1,7 +1,3 @@
----
-description: Instruction how to install a neovim on different operating systems
----
-
 # Installing a neovim on different systems
 
 ### Installing on Windows:
