@@ -211,7 +211,7 @@ enabled = true, -- start auto-save when the plugin is loaded (i.e. when your pac
 		dim = 0.18, -- dim the color of `message`
 		cleaning_interval = 1000, -- (milliseconds) automatically clean MsgArea after displaying `message`. See :h MsgArea
 	},
-    trigger_events = {"InsertLeave", "TextChanged", "BufNew", "BudLeave", "BufAdd", "BufDelete", "BufEnter", "UIEnter", "UILeave", "InsertChange", "InserEnter", "TabEnter", "TabLeave", "TabNew", "TabNewEntered", "TabClosed", "TermOpen", "TermEnter", "TermLeave", "TermClose", "TermResponse", "TextChanged", "TextChangedI", "TextChangedP", "VimEnter", "VimLeave", "VimResized", "VimResume", "VimSuspend", "WinClosed", "WinEnter", "WinLeave", "WinNew"},
+    trigger_events = {"InsertLeave", "TextChanged", "BufNew", "BufLeave", "BufAdd", "BufDelete", "BufEnter", "UIEnter", "UILeave", "InsertChange", "InsertEnter", "TabEnter", "TabLeave", "TabNew", "TabNewEntered", "TabClosed", "TermOpen", "TermEnter", "TermLeave", "TermClose", "TermResponse", "TextChanged", "TextChangedI", "TextChangedP", "VimEnter", "VimLeave", "VimResized", "VimResume", "VimSuspend", "WinClosed", "WinEnter", "WinLeave", "WinNew"},
         condition = function(buf)
 		    local fn = vim.fn
 		    local utils = require("auto-save.utils.data")	
