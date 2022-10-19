@@ -138,7 +138,7 @@ inoremap <expr> <s-tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 inoremap jk <esc>
 inoremap < <><Left>
 set colorcolumn=150
-nmap <c-r> <Plug>(coc-codeaction-selected)
+nmap <s-r> <Plug>(coc-codeaction-selected)
 let g:terraform_fmt_on_save = 1
 let g:mkdp_auto_start = 1
 let g:mkdp_refresh_slow = 1
