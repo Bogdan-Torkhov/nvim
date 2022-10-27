@@ -102,8 +102,8 @@ nmap <s-q> :bd<cr>
 nmap <s-s> :w<cr>
 nmap <s-f> :NERDTree<cr>
 nmap <space> <s-C>
-nnoremap <c-f> <cmd>Telescope find_files hidden=true cwd=/home/deusbog<cr>
-nnoremap <c-g> <cmd>Telescope live_grep hidden=true cwd=/home/deusbog<cr>
+nnoremap <c-f> <cmd>Telescope find_files hidden=true<cr>
+nnoremap <c-g> <cmd>Telescope live_grep hidden=true<cr>
 nnoremap <c-r> <cmd>Telescope repo list<cr>
 nnoremap <s-left> <c-w>h
 nnoremap <s-down> <c-w>j
