@@ -1,6 +1,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+	use 'wbthomason/packer.nvim'
 	use 'dracula/vim'
 	use 'scrooloose/nerdtree'
 	use 'ryanoasis/vim-devicons'
